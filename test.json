@@ -1,0 +1,132 @@
+{
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 7,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "jest": true
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "paths": [
+                    "src",
+                    "src/portal"
+                ]
+            }
+        }
+    },
+    "rules": {
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "indent": [
+            "warn",
+            "tab",
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "react/jsx-one-expression-per-line": "off",
+        "react/jsx-filename-extension": "off",
+        "react/jsx-indent": "off",
+        "react/jsx-indent-props": "off",
+        "react/forbid-prop-types": "off",
+        "react/require-default-prop": "off",
+        "react/require-default-props": "off",
+        "react/no-unused-state": "off",
+        "react/no-array-index-key": "off",
+        "react/prop-types": "warn",
+        "max-len": [
+            "warn",
+            { "code": 120 }
+        ],
+        "implicit-arrow-linebreak": "warn",
+        "class-methods-use-this": "warn",
+        "import/extensions": "warn",
+        "no-lone-blocks": "warn",
+        "import/no-named-as-default": "warn",
+        "import/no-named-as-default-member": "warn",
+        "import/no-extraneous-dependencies": "warn",
+        "react/no-find-dom-node": "warn",
+        "arrow-body-style": "warn",
+        "arrow-parens": "warn",
+        "comma-dangle": "warn",
+        "consistent-return": "warn",
+        "eol-last": "warn",
+        "function-paren-newline": "warn",
+        "import/no-cycle": "off",
+        "import/no-unresolved": "warn",
+        "import/no-useless-path-segments": "warn",
+        "jsx-quotes": "warn",
+        "keyword-spacing": "warn",
+        "lines-between-class-members": "warn",
+        "no-else-return": "warn",
+        "no-extra-semi": "warn",
+        "no-param-reassign": "warn",
+        "no-plusplus": "warn",
+        "no-redeclare": "warn",
+        "no-tabs": "off",
+        "no-trailing-spaces": "warn",
+        "no-unused-vars": "warn",
+        "no-use-before-define": "warn",
+        "no-useless-constructor": "warn",
+        "no-useless-return": "warn",
+        "object-curly-newline": "warn",
+        "object-curly-spacing": "warn",
+        "object-shorthand": "warn",
+        "one-var": "warn",
+        "operator-linebreak": "warn",
+        "padded-blocks": "warn",
+        "prefer-destructuring": "warn",
+        "quote-props": "warn",
+        "quotes": "warn",
+        "react/jsx-sort-props": ["warn", {
+			"ignoreCase": true,
+            "reservedFirst": false
+        }],
+        "react/destructuring-assignment": "warn",
+        "react/jsx-curly-brace-presence": "warn",
+        "react/no-access-state-in-setstate": "warn",
+        "react/prefer-stateless-function": "warn",
+        "react/self-closing-comp": "warn",
+        "react/sort-comp": "warn",
+        "semi": "warn",
+        "import/prefer-default-export": "warn",
+        "jsx-a11y/click-events-have-key-events": "warn",
+        "jsx-a11y/no-static-element-interactions": "warn",
+        "sort-keys": "warn",
+        "sort-vars": "warn",
+		"import/order": "off",
+		"sort-imports": ["warn", {
+			"ignoreCase": true,
+			"ignoreMemberSort": false,
+			"memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
+		}],
+        "sort-destructure-keys/sort-destructure-keys": "warn"
+    },
+    "overrides": [
+        {
+            "files": ["*styles.js", "Theme.js"],
+                "rules": {
+                    "sort-keys": "off",
+                    "sort-vars": "off"
+                }
+        }
+    ],
+    "plugins": [
+        "react",
+        "sort-destructure-keys"
+    ],
+    "extends": [
+        "airbnb",
+        "react-app"
+    ]
+}
